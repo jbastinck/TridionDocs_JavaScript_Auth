@@ -6,11 +6,11 @@ const parseString =  require('xml2js').parseString;
 const xml2js = require('xml2js');
 const parseStringPromise = util.promisify(parseString);
 
-const {getFirstFromXML} = require('./xmlParsing');
+const { getFirstFromXML } = require('./xmlParsing');
 
 /**
  * 
- * @param {string} loginUrl 
+ * @param {string} baseUrl
  * @param {string} username 
  * @param {string} password 
  * @param {boolean=} debug
