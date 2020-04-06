@@ -1,6 +1,8 @@
 const { createLoginRequestXML } = require("./helpers/getKeysForLogin");
 const { getRequestToken } = require("./helpers/getRequestToken");
+const signXml = require("./experiments/using-xml-crypto");
 const crypto = require("crypto");
+const fs = require("fs");
 require('dotenv').config()
 
 async function main(){
@@ -25,4 +27,10 @@ async function main(){
   // Step 4: 
   await getRequestToken(res, baseUrl, debug, created, expires).catch(err => console.log("error in step 4"));
 }
-main()
+
+// Experiments. 
+/**
+ * We want to to use xml-crypto to sign the xml correctly. However, we need input xml. We get the input xml from the response of step 3.
+ */
+signXml();
+//main()
