@@ -10,12 +10,13 @@ from non-windows environment, you will need to create soap requests.
 # Running Examples Locally
 
 ## Prerequisites 
-1.	Latest version of Nodejs (https://nodejs.org/en/)[https://nodejs.org/en/]
-2.	Install yarn https://classic.yarnpkg.com/en/docs/install#windows-stable 
+1.	Latest version of Nodejs [https://nodejs.org/en/](https://nodejs.org/en/)
+2.	Install yarn [https://classic.yarnpkg.com/en/docs/install#windows-stable](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
 ### Setting Environments
-This project uses dotenv library to load variabes from .env file to your environment. Hence you need to create a .env file. 
-Rename .env.example file to .env and update the values in it. 
+This project uses dotenv library to load variabes from .env file to your environment. Hence you need to create a `.env` file  at the root of this project.
+
+For your convinience, there is a `.env.example` file  already. Rename this file to `.env` and update the values.
 
 ## Running Locally
 - Clone github repo by typing following in your terminal or command prompt `git clone https://github.com/jbastinck/TridionDocs_JavaScript_Auth.git`
